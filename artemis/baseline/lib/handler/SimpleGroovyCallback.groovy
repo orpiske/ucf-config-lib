@@ -6,14 +6,6 @@ package samples
 
 class SimpleGroovyCallback {
 
-    def beforeConfigure(Map<String, Object> context) {
-      println("Executing before configure")
-    }
-
-    def beforeConfigure(Map<String, Object> context) {
-      println("Executing after configure")
-    }
-
     def beforeCommit(Map<String, Object> context) {
         String admin = context.get("admin");
         String artemis_home = context.get("artemis_home");
